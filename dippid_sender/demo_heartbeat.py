@@ -6,7 +6,7 @@ PORT = 5700
 sensor = SensorUDP(PORT)
 
 def handle_tick(_):
-    # Called for every packet because tick always changes.
+    # called for every packet because tick always changes.
     print(sensor.get_value('button_state'))
     print(sensor.get_value('accel_x'))
     print(sensor.get_value('accel_y'))
